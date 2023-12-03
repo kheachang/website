@@ -4,23 +4,16 @@ import { useState, useEffect } from "react";
 
 const useTheme = () => {
   const [theme, setTheme] = useState("light");
-
+  console.log(theme)
   useEffect(() => {
     const currentTheme = localStorage.getItem("theme");
     if (currentTheme) {
       setTheme(currentTheme);
-    } else {
-      const prefersDarkMode = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      if (prefersDarkMode) {
-        setTheme("dark");
-      }
     }
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
+    const newTheme = theme === "go light" ? "go dark" : "go light";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     document.documentElement.classList.toggle("light");
