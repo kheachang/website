@@ -3,7 +3,7 @@ function KikiBookService() {
         <div>
             <h2>kiki book service</h2>
             <p>
-                transfer all ig stuff into here.
+                transfer all reviews/notes into here.
             </p>
         </div>
         );
