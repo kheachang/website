@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
+import Home from "./pages/ome";
+import About from "./pages/about";
+import Projects from "./pages/projects";
 import Resume from "./pages/Resume";
 import QuinnAI from "./pages/QuinnAI";
 import AboutQuinnAI from "./pages/blogs/About-QuinnAI";
