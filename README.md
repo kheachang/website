@@ -9,3 +9,4 @@
 - [] put a project up
 - [] add pic of me? 
 - [] add my twitter to footer
+- [] write some tests
