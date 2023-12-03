@@ -1,6 +1,3 @@
-import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-
 // const hobbies = [
 //   "playing my ukulele",
 //   "writing poetry on my substack",

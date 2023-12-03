@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
-import { useState } from "react";
+import { useState} from "react";
 import useTheme from "../theme";
 import { CSSTransition } from "react-transition-group";
 
