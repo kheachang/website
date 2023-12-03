@@ -1,6 +1,6 @@
-# website
+# www.kheac.com
 
-## my website to share projects and logs. 
+### Created with React and deployed using Vercel.
 
 ## TODOs:
 - [ ] Add my custom domain
