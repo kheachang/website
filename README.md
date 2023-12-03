@@ -1,7 +1,6 @@
 # website
 
 ## my website to share projects and logs. 
-### Built using Next.js
 
 ## TODOs:
 - [] Add my custom domain
