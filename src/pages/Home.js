@@ -60,9 +60,9 @@ function Home() {
 
   return (
     <div>
-      <h2>kiki</h2>
+      <h2>kiki home</h2>
       <p>
-        home page
+        put some stuff here
       </p>
     </div>
   );

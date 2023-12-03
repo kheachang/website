@@ -1,25 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/ome";
-import About from "./pages/about";
-import Projects from "./pages/projects";
-import Resume from "./pages/Resume";
-import QuinnAI from "./pages/QuinnAI";
-import AboutQuinnAI from "./pages/blogs/About-QuinnAI";
-import NYC from "./pages/blogs/NYC";
-import Google from "./pages/blogs/Google";
-import Log from "./pages/Log";
-import Blog from "./pages/blogs/Blogs";
-import Tests from "./pages/Tests";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
 import "./index.css";
 import NavBar from "./components/navbar";
-import Footer from "./components/footer";
-import TagManager from "react-gtm-module";
-
-const tagManagerArgs = {
-  gtmId: "G-BR72D9JR60",
-};
-TagManager.initialize(tagManagerArgs);
+import Footer from "./components/Footer";
 
 function AppRoutes() {
   return (
@@ -55,55 +41,7 @@ function AppRoutes() {
   );
 }
 
-function LogRoutes() {
-  return (
-    <div>
-      <div class="flex-container" id="outer" />
-      <div class="flex-container" id="outer">
-        <div class="flex-container" id="inner"></div>
-
-        <div class="flex-container" id="blog">
-          <Routes>
-            <Route path="/" element={<Log />} />
-          </Routes>
-          <Footer />
-        </div>
-
-        <div class="flex-container" id="inner" />
-      </div>
-      <div class="flex-container" id="outer" />
-    </div>
-  );
-}
-
-function BlogRoutes() {
-  return (
-    <div>
-      <div class="flex-container" id="outer" />
-      <div class="flex-container" id="outer">
-        <div class="flex-container" id="inner"></div>
-
-        <div class="flex-container" id="blog">
-          <Routes>
-            <Route path="/" element={<Blog />} />
-            <Route path="quinn-ai" element={<AboutQuinnAI />} />
-            <Route path="nyc" element={<NYC />} />
-            <Route path="google" element={<Google />} />
-          </Routes>
-          <Footer />
-        </div>
-
-        <div class="flex-container" id="inner" />
-      </div>
-      <div class="flex-container" id="outer" />
-    </div>
-  );
-}
-
 function App() {
-  window.dataLayer.push({
-    event: "pageview",
-  });
   return (
     <div className="App">
       <meta charset="UTF-8"></meta>
@@ -122,8 +60,6 @@ function App() {
       />
       <Routes>
         <Route path="/*" element={<AppRoutes />} />
-        <Route path="/log/*" element={<LogRoutes />} />
-        <Route path="/blogs/*" element={<BlogRoutes />} />
       </Routes>
     </div>
   );

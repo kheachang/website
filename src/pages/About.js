@@ -10,11 +10,11 @@ function About() {
     <div>
       {/* <img src="/images/me.png" alt="it's me!" width="200" height="auto" /> */}
       <p>
-        <nobr>meeee</nobr>
+        <nobr> about me</nobr>
       </p>
       <hr class="dashed" />
       <p>
-        wheeee some stuff about me
+        wheeee some stuff about meeeee
       </p>
     </div>
   );
