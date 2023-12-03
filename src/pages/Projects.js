@@ -16,13 +16,13 @@ function Projects() {
       </p>
       <hr class="dashed" />
       <p>
-        <NavLink to="/quinn-ai" class="clickable">
+        <a href="https://github.com/kheachang/strava-meet-cute" class="clickable" target="_blank">
           <u>
-            <b>quinn ai</b>
+            <b>meet cute strava</b>
           </u>
-        </NavLink>{" "}
+        </a>{" "}
         <br />
-        talk to an ai version of me (try it out)!
+        nothing to see here...literally just started...WIP
       </p>
     </div>
   );

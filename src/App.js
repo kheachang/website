@@ -25,9 +25,6 @@ function AppRoutes() {
               <Route path="/" element={<Home />} />
               <Route path="about" element={<About />} />
               <Route path="projects" element={<Projects />} />
-              {/* <Route path="resume" element={<Resume />} />
-              <Route path="quinn-ai" element={<QuinnAI />} />
-              <Route path="personality-tests" element={<Tests />} /> */}
             </Routes>
 
             <Footer />

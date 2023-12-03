@@ -51,10 +51,6 @@ import { NavLink } from "react-router-dom";
 // }
 
 function Home() {
-  // useEffect(() => {
-  //   document.title = "quinn's home (≧∇≦)/";
-  // }, []);
-
   // const [currentHobby, handleHobbyClick] = useWordCycle(hobbies);
   // const [currentSpace, handleSpaceClick] = useWordCycle(space);
 
