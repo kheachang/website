@@ -18,7 +18,6 @@ function NavBar() {
     <div>
       <nav>
         <NavLink to="/">home</NavLink> <br />
-        <NavLink to="/about">about</NavLink> <br />
         <NavLink to="/projects">projects</NavLink> <br />
         <CSSTransition
           in={visible}
