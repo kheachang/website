@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import KikiBookService from "./pages/KikiBookService";
 import "./index.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/Footer";
@@ -23,6 +24,7 @@ function AppRoutes() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="projects" element={<Projects />} />
+              <Route path="kikibookservice" element={<KikiBookService />} />
             </Routes>
 
             <Footer />

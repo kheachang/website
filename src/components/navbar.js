@@ -19,6 +19,7 @@ function NavBar() {
       <nav>
         <NavLink to="/">home</NavLink> <br />
         <NavLink to="/projects">projects</NavLink> <br />
+        <NavLink to="/kikibookservice">kiki book service</NavLink><br />
         <CSSTransition
           in={visible}
           appear={true}
