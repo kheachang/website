@@ -55,7 +55,11 @@ function Home() {
     <div>
       <h2>kiki home</h2>
       <p>
-        put some stuff here
+        collection of my projects, book reviews, random bits and bobs.
+      </p>
+      <br></br>
+      <p>
+        website is always being updated although with no particular cadence.
       </p>
     </div>
   );
