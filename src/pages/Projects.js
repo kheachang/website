@@ -7,7 +7,6 @@ function Projects() {
 
   return (
     <div>
-      <h2>Projects</h2>
       <p>
         some projects, find the rest on my{" "}
         <a href="https://github.com/kheachang/" class="clickable" target="_blank" rel="noopener noreferrer">

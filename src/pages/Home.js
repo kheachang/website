@@ -53,7 +53,6 @@ function Home() {
 
   return (
     <div>
-      <h2>kiki home</h2>
       <p>
         collection of my projects, book reviews, random bits and bobs.
       </p>

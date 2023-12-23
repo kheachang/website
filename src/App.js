@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -6,8 +6,26 @@ import KikiBookService from "./pages/KikiBookService";
 import "./index.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function AppRoutes() {
+  const location = useLocation(); // Get the current location using useLocation hook
+
+  const getPageTitle = (currentPath) => {
+    switch (currentPath) {
+      case '/':
+        return "khea's home";
+      case '/projects':
+        return "khea's projects";
+      case '/kikibookservice':
+        return "kiki's book service";
+      default:
+        return "khea's home"; // Default title for other routes
+    }
+  };
+  
+  const currentPath = location.pathname; // Use the current path from location object
+
   return (
     <>
       <div id="outer">
@@ -16,6 +34,7 @@ function AppRoutes() {
             <NavBar></NavBar>
           </div>
           <div id="content">
+            <div id="header"><Header pageTitle={getPageTitle(currentPath)}/></div>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="projects" element={<Projects />} />
