@@ -13,6 +13,7 @@ function Projects() {
           github
         </a>{" "}
       </p>
+      <hr class="dashed" />
       <p>
         <a href="https://github.com/kheachang/strava-meet-cute" class="clickable" target="_blank" rel="noopener noreferrer">
           <u>
