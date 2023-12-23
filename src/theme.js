@@ -13,7 +13,7 @@ const useTheme = () => {
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "go light" ? "go dark" : "go light";
+    const newTheme = theme === "light mode" ? "dark mode" : "light mode";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     document.documentElement.classList.toggle("light");

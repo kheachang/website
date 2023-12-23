@@ -10,30 +10,21 @@ import Footer from "./components/Footer";
 function AppRoutes() {
   return (
     <>
-      <div class="flex-container" id="outer" />
-      <div class="flex-container" id="outer">
-        <div class="flex-container" id="inner"></div>
-
-        <div class="flex-container" id="inner">
-          <div class="flex-container" id="nav_bar">
-            <br />
+      <div id="outer">
+        <div id="inner">
+          <div id="nav_bar">
             <NavBar></NavBar>
           </div>
-
-          <div class="flex-container" id="content">
+          <div id="content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="projects" element={<Projects />} />
               <Route path="kikibookservice" element={<KikiBookService />} />
             </Routes>
-
             <Footer />
           </div>
         </div>
-
-        <div class="flex-container" id="inner" />
       </div>
-      <div class="flex-container" id="outer" />
     </>
   );
 }
